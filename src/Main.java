@@ -3,3 +3,4 @@ public class Main {
         System.out.println("Hello world!");
     }
 }
+//TOFIX You don't need this class and 2 psvm in one project

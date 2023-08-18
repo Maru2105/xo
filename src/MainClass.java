@@ -7,8 +7,8 @@ public class MainClass {
     public static final char DOT_X = 'X';
     public static final char DOT_O = 'O';
     public static char[][] map;
-    public static Scanner sc = new Scanner(System.in);
-    public static Random rand = new Random();
+    public static Scanner sc = new Scanner(System.in);//TODO you don't need Scanner as class variable
+    public static Random rand = new Random();//TODO you don't need Random as class variable
     public static void main(String[] args) {
         initMap();
         printMap();
@@ -36,6 +36,7 @@ public class MainClass {
         }
         System.out.println("Игра закончена");
     }
+    //TODO change checkWin to make it dynamic (so we can change the SIZE and this method will work)
     public static boolean checkWin(char symb) {
         if(map[0][0] == symb && map[0][1] == symb && map[0][2] == symb) return true;
         if(map[1][0] == symb && map[1][1] == symb && map[1][2] == symb) return true;
